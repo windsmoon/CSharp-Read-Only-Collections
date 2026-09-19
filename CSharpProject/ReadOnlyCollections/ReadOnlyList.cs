@@ -26,6 +26,7 @@ namespace Windsmoon.ReadOnlyCollections
         #endregion
 
         #region methods
+        public List<T>.Enumerator GetEnumerator() => _list.GetEnumerator();
         public bool Contains(T item) => _list.Contains(item);
         public bool Exists(Predicate<T> match) => _list.Exists(match);
         public T FindFirst(Predicate<T> match) => _list.Find(match);
@@ -36,7 +37,6 @@ namespace Windsmoon.ReadOnlyCollections
         public void CopyTo(T[] array) => _list.CopyTo(array);
         public void CopyTo(T[] array, int arrayIndex) => _list.CopyTo(array, arrayIndex);
         public void CopyTo(int index, T[] array, int arrayIndex, int count) => _list.CopyTo(index, array, arrayIndex, count);
-        public List<T>.Enumerator GetEnumerator() => _list.GetEnumerator();
         #endregion
     }
 }
