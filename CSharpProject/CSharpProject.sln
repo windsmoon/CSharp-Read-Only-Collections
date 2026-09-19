@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProject", "CSharpProject\CSharpProject.csproj", "{0A78AB42-BCE2-496C-A7FC-2913F443B689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadOnlyCollections", "ReadOnlyCollections\ReadOnlyCollections.csproj", "{B1197ED6-25AB-4EA2-9F9E-CCE0E2B44334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A78AB42-BCE2-496C-A7FC-2913F443B689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A78AB42-BCE2-496C-A7FC-2913F443B689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A78AB42-BCE2-496C-A7FC-2913F443B689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A78AB42-BCE2-496C-A7FC-2913F443B689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1197ED6-25AB-4EA2-9F9E-CCE0E2B44334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1197ED6-25AB-4EA2-9F9E-CCE0E2B44334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1197ED6-25AB-4EA2-9F9E-CCE0E2B44334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1197ED6-25AB-4EA2-9F9E-CCE0E2B44334}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

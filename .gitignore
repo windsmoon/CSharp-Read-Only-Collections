@@ -1,0 +1,27 @@
+# .NET build output and intermediate files
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio and JetBrains Rider local settings
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Test results and coverage reports
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# NuGet package output
+*.nupkg
+*.snupkg
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
