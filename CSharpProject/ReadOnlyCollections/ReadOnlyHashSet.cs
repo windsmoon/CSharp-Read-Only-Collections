@@ -25,6 +25,41 @@ namespace Windsmoon.ReadOnlyCollections
         #region methods
         public HashSet<T>.Enumerator GetEnumerator() => _set.GetEnumerator();
         public bool Contains(T item) => _set.Contains(item);
+        public bool Exists(Predicate<T> match)
+        {
+            if (match == null)
+            {
+                throw new ArgumentNullException(nameof(match));
+            }
+
+            foreach (T item in _set)
+            {
+                if (match(item))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        [return: MaybeNull]
+        public T FindFirst(Predicate<T> match)
+        {
+            if (match == null)
+            {
+                throw new ArgumentNullException(nameof(match));
+            }
+
+            foreach (T item in _set)
+            {
+                if (match(item))
+                {
+                    return item;
+                }
+            }
+            return default;
+        }
+
         public bool TryGetValue(T equalValue, [MaybeNullWhen(false)] out T actualValue) => _set.TryGetValue(equalValue, out actualValue);
         public bool IsSubsetOf(IEnumerable<T> other) => _set.IsSubsetOf(other);
         public bool IsSupersetOf(IEnumerable<T> other) => _set.IsSupersetOf(other);
