@@ -33,7 +33,7 @@ namespace Windsmoon.ReadOnlyCollections
         public bool ContainsKey(TKey key) => _dictionary.ContainsKey(key);
         public bool ContainsValue(TValue value) => _dictionary.ContainsValue(value);
         public bool TryGetValue(TKey key, [MaybeNullWhen(false)] out TValue value) => _dictionary.TryGetValue(key, out value);
-        public void CopyTo(KeyValuePair<TKey, TValue>[] array) => CopyTo(array, 0);
+        public void CopyTo(KeyValuePair<TKey, TValue>[] array) => ((ICollection<KeyValuePair<TKey, TValue>>)_dictionary).CopyTo(array, 0);
         public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex) => ((ICollection<KeyValuePair<TKey, TValue>>)_dictionary).CopyTo(array, arrayIndex);
         #endregion
     }
